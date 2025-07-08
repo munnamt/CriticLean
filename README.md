@@ -17,8 +17,7 @@ CriticLean: A Critic-Guided Framework for Mathematical Autoformalization
   <a href="https://huggingface.co/m-a-p/CriticLeanGPT-Qwen3-8B-RL"><b>[🤗 CriticLeanGPT]</b></a> •
   <a href="https://huggingface.co/datasets/m-a-p/CriticLeanInstruct"><b>[🧐 CriticLeanInstruct]</b></a> •
   <a href="https://huggingface.co/datasets/m-a-p/CriticLeanBench"><b>[📊 CriticLeanBench]</b></a> •
-  <a href="https://huggingface.co/datasets/m-a-p/FineLeanCorpus"><b>[📦 FineLeanCorpus]</b></a> •
-  <a href="https://github.com/multimodal-art-projection/CriticLean"><b>[🐱 GitHub]</b></a>
+  <a href="https://huggingface.co/datasets/m-a-p/FineLeanCorpus"><b>[📦 FineLeanCorpus]</b></a>
   <br>
   <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
   <!-- <a href="#-quick-start">Quick Start</a> • -->
