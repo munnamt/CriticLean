@@ -13,10 +13,12 @@ CriticLean: A Critic-Guided Framework for Mathematical Autoformalization
 </div>
 
 <p align="center">
-  <a href=""><b>[🌐 Website]</b></a> •
-  <a href=""><b>[📜 Paper]</b></a> •
-  <a href=""><b>[🤗 Dataset]</b></a> •
-  <a href=""><b>[🐱 GitHub]</b></a>
+  <a href=""><b>[📄 Paper]</b></a> •
+  <a href="https://huggingface.co/m-a-p/CriticLeanGPT-Qwen3-8B-RL"><b>[🤗 CriticLeanGPT]</b></a> •
+  <a href="https://huggingface.co/datasets/m-a-p/CriticLeanInstruct"><b>[🧐 CriticLeanInstruct]</b></a> •
+  <a href="https://huggingface.co/datasets/m-a-p/CriticLeanBench"><b>[📊 CriticLeanBench]</b></a> •
+  <a href="https://huggingface.co/datasets/m-a-p/FineLeanCorpus"><b>[📦 FineLeanCorpus]</b></a> •
+  <a href="https://github.com/multimodal-art-projection/CriticLean"><b>[🐱 GitHub]</b></a>
   <br>
   <!-- <a href="https://twitter.com/TODO"><b>[🐦 Twitter]</b></a> • -->
   <!-- <a href="#-quick-start">Quick Start</a> • -->
@@ -24,7 +26,7 @@ CriticLean: A Critic-Guided Framework for Mathematical Autoformalization
 </p>
 
 <p align="center">
-Repo for "<a href="https://arxiv.org/abs/2402.14809" target="_blank">CriticLean: A Critic-Guided Framework for Mathematical Autoformalization</a>"
+Repo for "<a href="" target="_blank">CriticLean: A Critic-Guided Framework for Mathematical Autoformalization</a>"
 </p>
 
 
@@ -46,29 +48,29 @@ By centering the formalization process on semantic validation, our work advances
 
 ## Framework Overview
 ### 💻 CriticLeanGPT Model
-#### 📋 CriticLeanGPT Training Dataset
+#### 📋 CriticLeanInstruct
 
-The CriticLean dataset suite consists of several JSONL files, each serving specific purposes in the model training pipeline. Here's a breakdown of each file:
+The CriticLeanInstruct dataset suite consists of several JSONL files, each serving specific purposes in the model training pipeline. Here's a breakdown of each file:
 
 | File Name | Description |
 |-----------|-------------|
-| `CriticLean_12K.jsonl` | All of our critic lean data (full critic lean dataset). |
-| `CriticLean_4K.jsonl` | A subset of the critic lean data, specifically used as our Reinforcement Learning (RL) dataset. |
-| `CriticLean_Mix_16K.jsonl` | A mixed dataset including:<br>- `CriticLean_4K.jsonl`<br>- 6k math data sampled from [OpenR1-Math-220k](https://huggingface.co/datasets/open-r1/OpenR1-Math-220k)<br>- 6k code data sampled from [OpenThoughts-114k-Code_decontaminated](https://huggingface.co/datasets/open-r1/OpenThoughts-114k-Code_decontaminated) |
-| `CriticLean_Mix_48K.jsonl` | An expanded mixed dataset including:<br>- `CriticLean_12K.jsonl`<br>- 18k math data sampled from [OpenR1-Math-220k](https://huggingface.co/datasets/open-r1/OpenR1-Math-220k)<br>- 18k code data sampled from [OpenThoughts-114k-Code_decontaminated](https://huggingface.co/datasets/open-r1/OpenThoughts-114k-Code_decontaminated) |
+| `CriticLean_12K` | All of our critic lean data. |
+| `CriticLean_4K` | Seed Data. A subset of the CriticLean_12K, specifically used as our Reinforcement Learning (RL) dataset. |
+| `CriticLean_Mix_48K` | An expanded mixed dataset including:<br>- `CriticLean_12K`<br>- 18k math data sampled from [OpenR1-Math-220k](https://huggingface.co/datasets/open-r1/OpenR1-Math-220k)<br>- 18k code data sampled from [OpenThoughts-114k-Code_decontaminated](https://huggingface.co/datasets/open-r1/OpenThoughts-114k-Code_decontaminated) |
+| `CriticLean_Mix_16K` | A mixed dataset including:<br>- `CriticLean_4K`<br>- 6k math data sampled from [OpenR1-Math-220k](https://huggingface.co/datasets/open-r1/OpenR1-Math-220k)<br>- 6k code data sampled from [OpenThoughts-114k-Code_decontaminated](https://huggingface.co/datasets/open-r1/OpenThoughts-114k-Code_decontaminated) |
 
 #### 🍭 Associated Model Variants
 
 We've trained several model variants using the CriticLean dataset to demonstrate its effectiveness. Below is a summary of the training configurations:
 
-| Base Model | SFT Applied? | SFT Data | RL Applied? | RL Data | Model Name |
+| Base Model | SFT Applied? | SFT Data | RL Applied? | RL Data | CriticLeanGPT Model Name |
 |------------|--------------|----------|-------------|---------|------------|
-| Qwen2.5-Instruct | Yes | `CriticLean_4K.jsonl` | No | * | Qwen2.5-Instruct-SFT(Critic Only) |
-| Qwen2.5-Instruct | Yes | `CriticLean_Mix_16K.jsonl` | No | * | Qwen2.5-Instruct-SFT(16K) |
-| Qwen2.5-Instruct | Yes | `CriticLean_Mix_48K.jsonl` | No | * | Qwen2.5-Instruct-SFT |
-| Qwen2.5-Instruct | Yes | `CriticLean_Mix_48K.jsonl` | Yes | `CriticLean_4K.jsonl` | Qwen2.5-Instruct-SFT-RL |
-| Qwen2.5-Instruct | No | * | Yes | `CriticLean_4K.jsonl` | Qwen2.5-RL |
-| Qwen3 | No | * | Yes | `CriticLean_4K.jsonl` | Qwen3-RL |
+| Qwen2.5-Instruct | Yes | `CriticLean_4K` | No | * | Qwen2.5-Instruct-SFT(Critic Only) |
+| Qwen2.5-Instruct | Yes | `CriticLean_Mix_16K` | No | * | Qwen2.5-Instruct-SFT(16K) |
+| Qwen2.5-Instruct | Yes | `CriticLean_Mix_48K` | No | * | Qwen2.5-Instruct-SFT |
+| Qwen2.5-Instruct | Yes | `CriticLean_Mix_48K` | Yes | `CriticLean_4K` | Qwen2.5-Instruct-SFT-RL |
+| Qwen2.5-Instruct | No | * | Yes | `CriticLean_4K` | Qwen2.5-RL |
+| Qwen3 | No | * | Yes | `CriticLean_4K` | Qwen3-RL |
 
 ### 📋 CriticLeanBench
 #### Overview
