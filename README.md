@@ -3,7 +3,7 @@
 <h1 align="center">
 <img src="images/CriticLean.png" width="80" alt="CriticBench" />
 <br>
-CriticLean: A Critic-Guided Framework for Mathematical Autoformalization
+CriticLean: Critic-Guided Reinforcement Learning for Mathematical Formalization
 </h1>
 
 <div align="center">
@@ -25,7 +25,7 @@ CriticLean: A Critic-Guided Framework for Mathematical Autoformalization
 </p>
 
 <p align="center">
-Repo for "<a href="https://arxiv.org/pdf/2507.06181" target="_blank">CriticLean: A Critic-Guided Framework for Mathematical Autoformalization</a>"
+Repo for "<a href="https://arxiv.org/pdf/2507.06181" target="_blank">CriticLean: Critic-Guided Reinforcement Learning for Mathematical Formalization</a>"
 </p>
 
 
