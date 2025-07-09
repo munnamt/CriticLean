@@ -13,7 +13,7 @@ CriticLean: A Critic-Guided Framework for Mathematical Autoformalization
 </div>
 
 <p align="center">
-  <a href=""><b>[📄 Paper]</b></a> •
+  <a href="https://arxiv.org/pdf/2507.06181"><b>[📄 Paper]</b></a> •
   <a href="https://huggingface.co/m-a-p/CriticLeanGPT-Qwen3-8B-RL"><b>[🤗 CriticLeanGPT]</b></a> •
   <a href="https://huggingface.co/datasets/m-a-p/CriticLeanInstruct"><b>[🧐 CriticLeanInstruct]</b></a> •
   <a href="https://huggingface.co/datasets/m-a-p/CriticLeanBench"><b>[📊 CriticLeanBench]</b></a> •
@@ -25,7 +25,7 @@ CriticLean: A Critic-Guided Framework for Mathematical Autoformalization
 </p>
 
 <p align="center">
-Repo for "<a href="" target="_blank">CriticLean: A Critic-Guided Framework for Mathematical Autoformalization</a>"
+Repo for "<a href="https://arxiv.org/pdf/2507.06181" target="_blank">CriticLean: A Critic-Guided Framework for Mathematical Autoformalization</a>"
 </p>
 
 
@@ -219,10 +219,13 @@ Apache-2.0 license
 ## ☕️ Citation
 If you find this repository helpful, please consider citing our paper:
 ```
-@article{peng2025criticlean,
-  title={CriticLean: Critic-Guided Reinforcement Learning for Mathematical Formalization},
-  author={Peng, Zhongyuan and Yao, Yifan and Ma, Kaijing and others},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025}
+@misc{peng2025criticleancriticguidedreinforcementlearning,
+      title={CriticLean: Critic-Guided Reinforcement Learning for Mathematical Formalization}, 
+      author={Zhongyuan Peng and Yifan Yao and Kaijing Ma and Shuyue Guo and Yizhe Li and Yichi Zhang and Chenchen Zhang and Yifan Zhang and Zhouliang Yu and Luming Li and Minghao Liu and Yihang Xia and Jiawei Shen and Yuchen Wu and Yixin Cao and Zhaoxiang Zhang and Wenhao Huang and Jiaheng Liu and Ge Zhang},
+      year={2025},
+      eprint={2507.06181},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2507.06181}, 
 }
 ```
