@@ -144,7 +144,7 @@ We recommend using the following metrics when evaluating models on CriticLeanBen
 
 The corpus is distinguished by its:
 - **Scale**: 285K entries, significantly larger than existing Lean 4 problem sets
-- **Quality**: 79.19% accuracy verified through manual sampling
+- **Quality**: 84% accuracy verified through manual sampling
 - **Diversity**: Coverage across multiple mathematical domains and difficulty levels
 - **Rigorous validation**: Each entry passes both syntactic checks (via Lean compiler) and semantic verification (via CriticLean model)
 ### Statistics
