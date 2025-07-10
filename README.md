@@ -68,7 +68,7 @@ We've trained several model variants using the CriticLean dataset to demonstrate
 | Qwen2.5-Instruct | Yes | `CriticLean_Mix_16K` | No | * | Qwen2.5-Instruct-SFT(16K) |
 | Qwen2.5-Instruct | Yes | `CriticLean_Mix_48K` | No | * | Qwen2.5-Instruct-SFT |
 | Qwen2.5-Instruct | Yes | `CriticLean_Mix_48K` | Yes | `CriticLean_4K` | Qwen2.5-Instruct-SFT-RL |
-| Qwen2.5-Instruct | No | * | Yes | `CriticLean_4K` | Qwen2.5-RL |
+| Qwen2.5-Instruct | No | * | Yes | `CriticLean_4K` | Qwen2.5-Instruct-RL |
 | Qwen3 | No | * | Yes | `CriticLean_4K` | Qwen3-RL |
 
 ### 📋 CriticLeanBench
